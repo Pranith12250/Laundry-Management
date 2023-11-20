@@ -142,13 +142,18 @@
   </div>
 
   {#if showData}
-    <p> <br>Your data:<br> Name: {studentName} <br></p>
-    <p> Number of washes remaining: {numberOfWashes}</p>
-    <p> Current laundry status: {status}</p>
+    <h1 style="font-style:20px"><br>Your data:<br></h1>
+    <h2 style="font-style:20px">Name: {studentName} <br></h2>
+    <h2 style="font-style:20px"> Number of washes remaining: {numberOfWashes}</h2>
+    <h2 style="font-style:20px"> Current laundry status: {status}</h2>
   {/if}
 
   {#if showData && status=='Open' && numberOfWashes>0}
-    <button on:click={handleModifyStatus}> Give for wash </button>
+  <div class="button-container">
+    <button on:click={handleModifyStatus}> 
+      <span style="font-size: 20px;">Give for wash </span>
+    </button>
+  </div>
   {/if}
 
   {#if showData && status=='Ready'}
@@ -224,6 +229,7 @@
 
   input[type="text"] 
   {
+    margin-bottom: 20px;
     padding: 10px;
     border: 2px solid #3498db;
     border-radius: 10px;
@@ -240,5 +246,11 @@
     outline: none;
     border-color: #e06b48;
     transform: scale(1.05);
+  }
+
+  label 
+  {
+    margin-bottom: 10px;
+    font-size: 30px;
   }
 </style>
