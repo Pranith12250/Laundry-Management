@@ -160,7 +160,7 @@
     <button on:click={handleLaundryCollection}>Collect Laundry</button>
   {/if}
 
-  <footer>This webpage was created by Pranith</footer>
+  <footer>This webpage was created by Pranith. For detailed explanation, check README.txt</footer>
 </main>
 
 <style>
