@@ -4,7 +4,7 @@
   import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
   
   const firebaseConfig = {
-  apiKey: 'AIzaSyAPSYyrNMPFW48-ls7O6EZnHVjv5w9OxtQ',
+  apiKey: 'AIzaSyAPSYyrNMPFW48-ls7O6EZnHVjv5w9Oxt',
   authDomain: 'laundry-data.firebaseapp.com',
   projectId: 'laundry-data',
   storageBucket: "laundry-data.appspot.com",
